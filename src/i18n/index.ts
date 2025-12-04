@@ -1,0 +1,61 @@
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+
+const resources = {
+  en: {
+    translation: {
+      "Welcome to React": "Welcome to React and react-i18next",
+    },
+  },
+  fa: {
+    translation: {
+      headerPage: {
+        NumberHeader: "09930009811",
+      },
+      mainPage: {
+        SwiperStory1: "اعتبار همراهی",
+        SwiperStory2: "آوای انتظار",
+        SwiperStory3: "قرعه کشی",
+        SwiperStory4: "اینترنت",
+        SwiperStory5: "خدمت در محل",
+        SwiperStory6: "شارژ",
+        SwiperStory7: "باشگاه",
+        Payamak: "پیامک",
+        Internet: "اینترنت",
+        Mokaleme: "مکالمه",
+        thereIsNo: "بسته  ندارید",
+        thereIs: "بسته  دارید",
+        lastChar: "باقی مانده ی شارژ",
+        baghiCharg: " : باقی‌مانده شارژ ",
+        reaal: "ریال",
+        buycharch: "خرید شارژ",
+        mablaghCharg: "165,994",
+        tabdile: "تبدیل",
+        pishnahadi: "پیشنهادی",
+        tashvigi: "تشویقی",
+        iphone: "ایفون 17",
+        vighe: "ویژه",
+        home: "خانه",
+        charg: "شارژ",
+        basteha: "بسته ها",
+        khadamat: "خدمات",
+        kifpool: "کیف پول",
+      },
+    },
+  },
+};
+
+i18n
+  .use(initReactI18next) // passes i18n down to react-i18next
+  .init({
+    resources,
+    lng: "fa", // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
+    // you can use the i18n.changeLanguage function to change the language manually: https://www.i18next.com/overview/api#changelanguage
+    // if you're using a language detector, do not define the lng option
+
+    interpolation: {
+      escapeValue: false, // react already safes from xss
+    },
+  });
+
+export default i18n;
