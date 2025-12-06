@@ -5,7 +5,7 @@ function FooterHeader() {
   const { t } = useTranslation();
   return (
     <>
-      <div className="w-[428px] h-[86px] bg-[#22272B] absolute bottom-0 flex flex-row-reverse justify-around items-end ">
+      <div className="w-[428px] h-[86px] bg-[#22272B] absolute bottom-0 left-1/2 -translate-x-1/2f flex flex-row-reverse justify-around items-end ">
         <div className="w-[64px] h-[68px]  flex flex-col justify-center items-center gap-[5px] rounded-[10px] hover:bg-[#4f5052]">
           <svg
             fill="none"
