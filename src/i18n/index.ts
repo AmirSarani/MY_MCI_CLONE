@@ -12,6 +12,18 @@ const resources = {
       headerPage: {
         NumberHeader: "09930009811",
       },
+      Login: {
+        SignUpSignIn: "ثبت نام | ورود",
+        PleaseEnterYourMobileNumber:
+          "سلام، لطفا شماره تلفن همراه خود را وارد کنید.",
+        EnterYourNumber: "تلفن همراه",
+        BadgNumber: "۹۸+",
+        LoginWithPassword: "ورود با رمز عبور",
+      },
+      otpPage: {
+        EnterCode: "کد تایید را وارد کنید",
+        CodeSent: " کد 5 رقمی به شماره 09961626482 ارسال شد. ",
+      },
       mainPage: {
         SwiperStory1: "اعتبار همراهی",
         SwiperStory2: "آوای انتظار",

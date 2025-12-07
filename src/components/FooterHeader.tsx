@@ -1,12 +1,20 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router";
 
 function FooterHeader() {
   const { t } = useTranslation();
+
+  const navigate = useNavigate();
+
   return (
     <>
-      <div className="w-[428px] h-[86px] bg-[#22272B] absolute bottom-0 left-1/2 -translate-x-1/2f flex flex-row-reverse justify-around items-end ">
-        <div className="w-[64px] h-[68px]  flex flex-col justify-center items-center gap-[5px] rounded-[10px] hover:bg-[#4f5052]">
+      <div className="w-[428px] h-[86px] bg-[#22272B] absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-row-reverse justify-around items-end ">
+        <button
+          className="w-[64px] h-[68px]  flex flex-col justify-center items-center gap-[5px] rounded-[10px] hover:bg-[#4f5052]"
+          onClick={() => {
+            navigate("/Login");
+          }}
+        >
           <svg
             fill="none"
             viewBox="0 0 24 24"
@@ -43,8 +51,13 @@ function FooterHeader() {
           <span className="text-[10px] text-[#6B7280]">
             {t("mainPage.home")}
           </span>
-        </div>
-        <div className="w-[64px] h-[68px] 100 flex flex-col justify-center items-center  gap-[5px] rounded-[10px] hover:bg-[#4f5052]">
+        </button>
+        <button
+          className="w-[64px] h-[68px] 100 flex flex-col justify-center items-center  gap-[5px] rounded-[10px] hover:bg-[#4f5052]"
+          onClick={() => {
+            navigate("/Otp");
+          }}
+        >
           <svg
             fill="none"
             viewBox="0 0 24 24"
@@ -80,8 +93,8 @@ function FooterHeader() {
             {" "}
             {t("mainPage.charg")}
           </span>
-        </div>
-        <div className="w-[64px] h-[68px] flex flex-col justify-center items-center  gap-[5px] rounded-[10px] hover:bg-[#4f5052]">
+        </button>
+        <button className="w-[64px] h-[68px] flex flex-col justify-center items-center  gap-[5px] rounded-[10px] hover:bg-[#4f5052]">
           <svg
             fill="none"
             viewBox="0 0 24 24"
@@ -166,8 +179,8 @@ function FooterHeader() {
           <span className="text-[10px] text-[#6B7280]">
             {t("mainPage.basteha")}
           </span>
-        </div>
-        <div className="w-[64px] h-[68px]  flex flex-col justify-center items-center  gap-[5px] rounded-[10px] hover:bg-[#4f5052]">
+        </button>
+        <button className="w-[64px] h-[68px]  flex flex-col justify-center items-center  gap-[5px] rounded-[10px] hover:bg-[#4f5052]">
           <svg
             fill="none"
             viewBox="0 0 24 24"
@@ -197,8 +210,8 @@ function FooterHeader() {
           <span className="text-[10px] text-[#6B7280]">
             {t("mainPage.khadamat")}
           </span>
-        </div>
-        <div className="w-[64px] h-[68px]  flex flex-col justify-center items-center  gap-[5px] rounded-[10px] hover:bg-[#4f5052]">
+        </button>
+        <button className="w-[64px] h-[68px]  flex flex-col justify-center items-center  gap-[5px] rounded-[10px] hover:bg-[#4f5052]">
           <svg
             fill="none"
             viewBox="0 0 24 24"
@@ -249,7 +262,7 @@ function FooterHeader() {
           <span className="text-[10px] text-[#6B7280]">
             {t("mainPage.kifpool")}
           </span>
-        </div>
+        </button>
       </div>
     </>
   );

@@ -5,7 +5,7 @@ export const Header = () => {
 
   return (
     <>
-      <div className="w-full h-[78px] bg-[#101214] px-[50px] flex justify-center items-center gap-2 ">
+      <div className="w-full h-[78px] bg-[#101214]  flex justify-center items-center gap-2 ">
         <div className="w-[42px] h-[42px] bg-[#22272B] rounded-[10px] flex justify-center items-center">
           <svg
             fill="none"
