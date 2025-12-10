@@ -1,11 +1,17 @@
-// import { create } from "zustand";
+import { create } from "zustand";
+import { persist } from "zustand/middleware";
 
-// type Store = {
-//   count: number;
-//   inc: () => void;
-// };
+type TNumberLogin = {
+  number: string;
+  setNumber: (v: string) => void;
+};
 
-// const useStore = create<Store>()((set) => ({
-//   count: 1,
-//   inc: () => set((state) => ({ count: state.count + 1 })),
-// }));
+export const useNumberLogin = create<TNumberLogin>()(
+  persist(
+    (set) => ({
+      number: "",
+      setNumber: (value) => set(() => ({ number: value })),
+    }),
+    { name: "phonNumber" }
+  )
+);

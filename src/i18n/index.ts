@@ -10,7 +10,7 @@ const resources = {
   fa: {
     translation: {
       headerPage: {
-        NumberHeader: "09930009811",
+        NumberHeader: "{{number}}",
       },
       Login: {
         SignUpSignIn: "ثبت نام | ورود",
@@ -22,7 +22,7 @@ const resources = {
       },
       otpPage: {
         EnterCode: "کد تایید را وارد کنید",
-        CodeSent: " کد 5 رقمی به شماره 09961626482 ارسال شد. ",
+        CodeSent: " کد 5 رقمی به شماره {{number}} ارسال شد. ",
       },
       mainPage: {
         SwiperStory1: "اعتبار همراهی",

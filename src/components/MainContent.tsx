@@ -5,6 +5,7 @@ import Chart from "react-apexcharts";
 
 export const MainContent = () => {
   const { t } = useTranslation();
+
   const options1 = {
     chart: {
       type: "radialBar",

@@ -1,7 +1,9 @@
 import { useTranslation } from "react-i18next";
+import { useNumberLogin } from "../store/useStore";
 
 export const Header = () => {
   const { t } = useTranslation();
+  const { number } = useNumberLogin();
 
   return (
     <>
@@ -153,7 +155,7 @@ export const Header = () => {
             </div>
 
             <div className="w-[185px] text-right text-white  border-black border-r  ">
-              {t("headerPage.NumberHeader")}
+              {t("headerPage.NumberHeader", { number })}
             </div>
           </div>
         </div>

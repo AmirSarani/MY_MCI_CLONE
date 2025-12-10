@@ -3,10 +3,16 @@ import hamrahLogo from "../images/hamrah-e-man-logo.svg";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router";
+// import { useStore } from "zustand";
+import { useNumberLogin } from "../store/useStore";
 
 function Login() {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  // const { number, setNumber } = useStore();
+
+  // گرفتن state از Zustand
+  const { setNumber } = useNumberLogin();
 
   const {
     register,
@@ -17,6 +23,8 @@ function Login() {
   // وقتی فرم درست بود این اجرا می‌شود
   const onSubmit = (data: any) => {
     console.log("PHONE:", data.phone);
+    setNumber(data.phone);
+
     // اینجا بفرست صفحه بعد:
     navigate("/Otp");
   };
