@@ -103,7 +103,7 @@ export const MainContent = () => {
 
   return (
     <>
-      <div className="w-full bg-[#101214] flex flex-col justify-center items-center gap-[10px]">
+      <div className="w-full bg-[#101214] flex flex-col justify-center items-center gap-[10px] mb-40 ">
         <div
           className="w-[396px] bg-[#22272B] h-[108px] flex rounded-[10px] "
           dir="rtl"
