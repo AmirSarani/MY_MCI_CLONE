@@ -9,11 +9,11 @@ function FooterHeader() {
   return (
     <>
       {/* <div className="w-full h-[86px] relative flex justify-end items-end bg-amber-200"> */}
-      <div className="w-full h-[86px] bg-[#22272B] fixed bottom-0 left-1/2 -translate-x-1/2 flex flex-row-reverse justify-around items-end z-999">
+      <div className="w-full h-[86px] bg-[#22272B] fixed bottom-0 left-1/2 -translate-x-1/2 flex flex-row-reverse justify-around items-end z-999 rounded-t-[10px]">
         <button
           className="w-[64px] h-[68px]  flex flex-col justify-center items-center gap-[5px] rounded-[10px] hover:bg-[#4f5052]"
           onClick={() => {
-            navigate("/Login");
+            navigate("/");
           }}
         >
           <svg
@@ -56,7 +56,7 @@ function FooterHeader() {
         <button
           className="w-[64px] h-[68px] 100 flex flex-col justify-center items-center  gap-[5px] rounded-[10px] hover:bg-[#4f5052]"
           onClick={() => {
-            navigate("/Otp");
+            navigate("/Charge");
           }}
         >
           <svg
@@ -152,7 +152,7 @@ function FooterHeader() {
               stroke="#0095da"
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokewidth="1.5"
+              strokeWidth="1.5"
               d="M16.5 4.5l2.25 1.25a1.5 1.5 0 01.055 2.592l-.055.033-1.125.688M3 12V9.637a1.479 1.479 0 012.25-1.262v0l1.125.688"
             ></path>
             <path
@@ -181,7 +181,12 @@ function FooterHeader() {
             {t("mainPage.basteha")}
           </span>
         </button>
-        <button className="w-[64px] h-[68px]  flex flex-col justify-center items-center  gap-[5px] rounded-[10px] hover:bg-[#4f5052]">
+        <button
+          className="w-[64px] h-[68px]  flex flex-col justify-center items-center  gap-[5px] rounded-[10px] hover:bg-[#4f5052]"
+          onClick={() => {
+            navigate("Services");
+          }}
+        >
           <svg
             fill="none"
             viewBox="0 0 24 24"

@@ -7,6 +7,7 @@ import { RouterProvider } from "react-router/dom";
 import Home from "./page/Home";
 import Login from "./page/Login";
 import Otp from "./page/Otp";
+import Services from "./page/Services";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
   {
     path: "/Otp",
     element: <Otp />,
+  },
+
+  {
+    path: "/Services",
+    element: <Services />,
   },
 ]);
 
