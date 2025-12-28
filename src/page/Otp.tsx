@@ -17,7 +17,7 @@ const Otp = () => {
   } = useForm();
 
   const onsubmit = () => {
-    navigate("/");
+    navigate("/Home");
   };
 
   return (

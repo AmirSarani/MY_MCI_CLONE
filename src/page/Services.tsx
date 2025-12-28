@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/css";
 // import "swiper/css/pagination";
 // import { FreeMode, Pagination } from "swiper/modules";
-import MyImg from "../images/forFirstSliderHamrah.jpg";
+// import MyImg from "../images/forFirstSliderHamrah.jpg";
 import { motion } from "framer-motion";
 import clsx from "clsx";
 import FooterHeader from "../components/FooterHeader";

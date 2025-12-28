@@ -8,14 +8,17 @@ import Home from "./page/Home";
 import Login from "./page/Login";
 import Otp from "./page/Otp";
 import Services from "./page/Services";
+import Charge from "./page/Charge";
+import Internet from "./page/Internet";
+import Kifepool from "./page/Kifepool";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Home",
     element: <Home />,
   },
   {
-    path: "/Login",
+    path: "/",
     element: <Login />,
   },
   {
@@ -24,8 +27,21 @@ const router = createBrowserRouter([
   },
 
   {
+    path: "/Charge",
+    element: <Charge />,
+  },
+
+  {
+    path: "/Internet",
+    element: <Internet />,
+  },
+  {
     path: "/Services",
     element: <Services />,
+  },
+  {
+    path: "/Kifepool",
+    element: <Kifepool />,
   },
 ]);
 

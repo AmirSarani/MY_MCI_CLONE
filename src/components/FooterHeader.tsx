@@ -9,11 +9,14 @@ function FooterHeader() {
   return (
     <>
       {/* <div className="w-full h-[86px] relative flex justify-end items-end bg-amber-200"> */}
-      <div className="w-full h-[86px] bg-[#22272B] fixed bottom-0 left-1/2 -translate-x-1/2 flex flex-row-reverse justify-around items-end z-999 rounded-t-[10px]">
+      <div
+        dir="ltr"
+        className="w-full h-[86px] bg-[#22272B] fixed bottom-0 left-1/2 -translate-x-1/2 flex flex-row-reverse justify-around items-end z-999 rounded-t-[10px]"
+      >
         <button
           className="w-[64px] h-[68px]  flex flex-col justify-center items-center gap-[5px] rounded-[10px] hover:bg-[#4f5052]"
           onClick={() => {
-            navigate("/");
+            navigate("/Home");
           }}
         >
           <svg
@@ -95,7 +98,12 @@ function FooterHeader() {
             {t("mainPage.charg")}
           </span>
         </button>
-        <button className="w-[64px] h-[68px] flex flex-col justify-center items-center  gap-[5px] rounded-[10px] hover:bg-[#4f5052]">
+        <button
+          className="w-[64px] h-[68px] flex flex-col justify-center items-center  gap-[5px] rounded-[10px] hover:bg-[#4f5052]"
+          onClick={() => {
+            navigate("/Internet");
+          }}
+        >
           <svg
             fill="none"
             viewBox="0 0 24 24"
@@ -184,7 +192,7 @@ function FooterHeader() {
         <button
           className="w-[64px] h-[68px]  flex flex-col justify-center items-center  gap-[5px] rounded-[10px] hover:bg-[#4f5052]"
           onClick={() => {
-            navigate("Services");
+            navigate("/Services");
           }}
         >
           <svg
@@ -217,7 +225,12 @@ function FooterHeader() {
             {t("mainPage.khadamat")}
           </span>
         </button>
-        <button className="w-[64px] h-[68px]  flex flex-col justify-center items-center  gap-[5px] rounded-[10px] hover:bg-[#4f5052]">
+        <button
+          className="w-[64px] h-[68px]  flex flex-col justify-center items-center  gap-[5px] rounded-[10px] hover:bg-[#4f5052]"
+          onClick={() => {
+            navigate("/Kifepool");
+          }}
+        >
           <svg
             fill="none"
             viewBox="0 0 24 24"
