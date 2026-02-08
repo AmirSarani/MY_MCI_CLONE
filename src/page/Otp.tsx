@@ -1,4 +1,3 @@
-import React from "react";
 import hamrahLogo from "../images/hamrah-e-man-logo.svg";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router";
@@ -42,7 +41,6 @@ const Otp = () => {
             fill="none"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
-            // fit=""
             height="100%"
             width="100%"
             preserveAspectRatio="xMidYMid meet"

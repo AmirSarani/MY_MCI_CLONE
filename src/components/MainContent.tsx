@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Autoplay, FreeMode, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Chart from "react-apexcharts";
 
@@ -68,7 +68,7 @@ export const MainContent = () => {
   };
   const options3 = {
     chart: {
-      type: "radialBar",
+      type: "radialBar" as any,
     },
     plotOptions: {
       radialBar: {
@@ -277,7 +277,7 @@ export const MainContent = () => {
 
             <div className="w-[100px] h-[100px]  flex justify-center items-center">
               <Chart
-                options={options1}
+                options={options1 as any}
                 series={series1}
                 type="radialBar"
                 height={130}
@@ -293,7 +293,7 @@ export const MainContent = () => {
 
             <div className="w-[100px] h-[100px]  flex justify-center items-center">
               <Chart
-                options={options2}
+                options={options2 as any}
                 series={series2}
                 type="radialBar"
                 height={130}
@@ -355,7 +355,6 @@ export const MainContent = () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
-                  fit=""
                   height="24px"
                   width="24px"
                   preserveAspectRatio="xMidYMid meet"
@@ -422,7 +421,6 @@ export const MainContent = () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
-                  fit=""
                   height="24px"
                   width="24px"
                   preserveAspectRatio="xMidYMid meet"
@@ -475,7 +473,6 @@ export const MainContent = () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
-                  fit=""
                   height="24px"
                   width="24px"
                   preserveAspectRatio="xMidYMid meet"
@@ -523,7 +520,6 @@ export const MainContent = () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
-                  fit=""
                   height="24px"
                   width="24px"
                   preserveAspectRatio="xMidYMid meet"

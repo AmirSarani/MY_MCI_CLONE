@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import FooterHeader from "../components/FooterHeader";
 import InternetC from "../components/InternetC";
@@ -59,7 +59,7 @@ const Internet = () => {
               "flex  items-center px-4 gap-1 justify-center text-[11px]  py-2 rounded-md",
               activeInternet === "internet"
                 ? "bg-[#22272B] text-white"
-                : "bg-[#161A1D] text-white"
+                : "bg-[#161A1D] text-white",
             )}
           >
             <svg
@@ -110,7 +110,7 @@ const Internet = () => {
               "flex items-center justify-center text-[12px] px-4 gap-1  py-2 rounded-md",
               activeInternet === "conversetion"
                 ? "bg-[#22272B] text-white"
-                : "bg-[#161A1D] text-white"
+                : "bg-[#161A1D] text-white",
             )}
           >
             <svg
@@ -146,14 +146,13 @@ const Internet = () => {
               "flex  items-center justify-center gap-1 text-[12px]  px-4 py-2 rounded-md",
               activeInternet === "message"
                 ? "bg-[#22272B] text-white"
-                : "bg-[#161A1D] text-white"
+                : "bg-[#161A1D] text-white",
             )}
           >
             <svg
               fill="none"
               viewBox="0 0 56 56"
               xmlns="http://www.w3.org/2000/svg"
-              // fit=""
               height="24"
               width="24"
               preserveAspectRatio="xMidYMid meet"

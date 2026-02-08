@@ -1,4 +1,3 @@
-import React from "react";
 import hamrahLogo from "../images/hamrah-e-man-logo.svg";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
@@ -90,7 +89,7 @@ function Login() {
               {/* Error */}
               {errors.phone && (
                 <p className="text-red-400 text-[13px] mt-2 text-right">
-                  {errors.phone.message}
+                  {errors.phone.message as string}
                 </p>
               )}
             </div>
